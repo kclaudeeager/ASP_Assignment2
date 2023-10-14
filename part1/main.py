@@ -5,6 +5,7 @@
 
 
 import random
+import numpy as np
 
 
 def simulate(n_numbers, n_replications):
@@ -16,7 +17,6 @@ def simulate(n_numbers, n_replications):
         exit(1)
     for i in range(n_replications):
         numbers = [random.random() for _ in range(n_numbers)]
-
         # Find the highest number.
         highest = max(numbers)
 
